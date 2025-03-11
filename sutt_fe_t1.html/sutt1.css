@@ -1,0 +1,207 @@
+/* General Styles */
+
+  
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .logo-container .logo {
+    height: 30px; /* Adjust logo size */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+  }
+  
+  .nav-links a.active {
+    color: #007bff; /* Blue color for active link */
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-actions .icon {
+    height: 20px; /* Support icon size */
+  }
+  
+  .country-selector {
+    display: flex;
+    align-items: center;
+  }
+  
+  .country-selector .flag {
+    height: 15px; /* Flag size */
+  }
+  
+  .login-btn {
+    background-color: transparent;
+    border: none;
+    color: #007bff; /* Blue color for Login */
+    font-size: 14px;
+  }
+  
+  .signup-btn {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+  }
+  
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    display: flex;
+    width: 300%; /* Three images: two originals and one duplicate */
+    animation: slide 8s infinite linear;
+  }
+  
+  .slider-image {
+    width: 33.33%;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33.33% {
+      transform: translateX(-33.33%);
+    }
+    66.66% {
+      transform: translateX(-66.66%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .brand-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .brand-logo {
+    display: inline-block;
+    height: 60px; /* Adjust height as needed */
+    margin-right: 20px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+  
+  .brand-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Optional: Custom scrollbar styling for WebKit browsers */
+  .brand-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .brand-scroll::-webkit-scrollbar-track {
+    background: #e0e0e0;
+  }
+  
+  .brand-scroll::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 4px;
+  }
+
+  /* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #1a1a1a;
+    background-color: #f9f9f9;
+  }
+  
+  .hero-section {
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .hero-content .highlight {
+    color: #00b389; /* Green color for "finance platform" */
+  }
+  
+  .hero-content .subtext {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #6c757d; /* Subtle gray for subtext */
+  }
+  
+  .features {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .features span {
+    font-size: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .features span:nth-child(2n) {
+    color: #6c757d; /* Gray for separators (|) */
+  }
+  
+  
+  
+
+

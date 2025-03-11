@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  /* Sticky Header */
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .logo-container .logo {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .nav-links a.active {
+    color: #007bff; /* Blue color for active link */
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-actions .icon {
+    height: 20px; /* Support icon size */
+  }
+  
+  .country-selector .flag {
+    height: 20px; /* Flag size */
+  }
+  
+  .login-btn {
+    background-color: transparent;
+  }
+  
+  .signup-btn {
+    background-color: #007bff; /* Blue button */
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 40px;
+  }
+  
+  .hero-content h1 {
+  }
+  
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    width: calc(100% * 4); /* Total width for all images */
+    animation: slide 15s infinite linear; /* Sliding animation */
+  }
+  
+  .slider-image {
+    width: 100%; /* Each image takes full viewport width */
+  }
+  
+  /* Keyframes for sliding animation */
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-80%); /* Slide by half the total width */
+    }
+  }
+
+ /* Brand Slider Section */
+.brand-slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0; /* Add padding for visual appeal */
+  }
+  
+  .slider-track {
+    display: inline-block; /* Ensure the track is on one line */
+    animation: scroll 15s linear infinite; /* Adjust animation speed as needed */
+  }
+  
+  .brand-logo {
+      height: 40px; /* Adjust logo height as needed */
+      margin: 0 15px; /* Adjust spacing around logos */
+      display: inline-block;
+  }
+  
+  @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }  /* Adjust based on content width */
+  }
+  
+  /* Ensure the slider runs smoothly in Firefox */
+  @-moz-keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+  }
+  
+  /* Ensure the slider runs smoothly in Safari */
+  @-webkit-keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+  }
+  /* Top Section */
+.top-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.top-section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-section .headline {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.top-section .subheadline {
+    font-size: 1rem;
+    color: #777;
+}
+
+.top-section .subheadline span {
+    margin-left: 10px;
+}
+
+/* Product Navigation */
+.product-navigation {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.product-navigation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the start */
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.product-navigation a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent; /* Add a transparent border */
+    display: inline-block; /* Important for margin and padding */
+}
+
+.product-navigation a:hover {
+    border-color: #ddd; /* Color of the border */
+    background-color: #f5f5f5;
+}
+
+.product-navigation .get-started-button {
+    background-color: #29abe2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: auto; /* Push the button to the right */
+}
+
+.product-navigation .get-started-button:hover {
+    background-color: #249bce;
+}
+
+/* Accept Payments Section */
+.accept-payments-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9; /* Same as top section, for consistency */
+}
+
+.accept-payments-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accept-payments-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.product-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.product-tabs a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Add a border */
+    background-color: #fff;
+    display: inline-block; /* Make it block-level */
+}
+
+.product-tabs a.active {
+    background-color: #e9ecef;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.product-card img {
+}
+
+
+  
